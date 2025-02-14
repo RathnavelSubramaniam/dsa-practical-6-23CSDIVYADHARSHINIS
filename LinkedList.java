@@ -1,10 +1,13 @@
 import java.util.Scanner;
-public class LinkedList {
-    class Node {
+public class LinkedList
+ {
+    class Node
+     {
         int data;
         Node next;
 
-public Node(int data) {
+public Node(int data)
+ {
 this.data = data;
 this.next = null;
         }
@@ -13,9 +16,11 @@ this.next = null;
     Node head = null;
     Node tail = null;
 
-    public void addNode(int data) {
+    public void addNode(int data)
+     {
         Node newNode = new Node(data);
-        if (head == null) {
+        if (head == null)
+         {
             head = newNode;
             tail = newNode;
         } 
@@ -26,7 +31,8 @@ tail = newNode;
         }
     }
 
-public static void main(String[] args) {
+public static void main(String[] args)
+ {
         LinkedList list = new LinkedList();
         Scanner sc = new Scanner(System.in);
         int pos=0;
@@ -63,9 +69,11 @@ public static void main(String[] args) {
             }
            }
     }
-public void insertBegin(int data) {
+public void insertBegin(int data) 
+{
         Node newNode = new Node(data);
-        if (head == null) {
+        if (head == null) 
+        {
             head = newNode;
             tail = newNode;
         } else {
@@ -74,9 +82,11 @@ public void insertBegin(int data) {
         }
         
     }
-public void displayList() {
+public void displayList() 
+{
         Node current = head;
-        while (current != null) {
+        while (current != null)
+         {
         System.out.print(current.data + " -> ");
         current = current.next;
         }
